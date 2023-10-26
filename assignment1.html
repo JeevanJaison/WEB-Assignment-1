@@ -1,0 +1,321 @@
+<html>
+	<head>
+		<title>Assignment 1</title>
+		<style type="text/css">
+			#parent{
+				height: 1500px;
+			}
+			#nav{
+
+				background-image: url("stock-photo-brown-wooden-texture-background.jpeg");
+				}
+			#nav a{
+				margin-left: 50px;
+    			margin-right: 50px; 
+    			text-decoration: none;
+    			font-size: 24px;
+    			font-family:sans-serif;
+    			font-style: italic;
+    			color:white;
+    			}
+    		#nav a:hover{
+    			font-size: 30px;
+    		}
+			#mainTable{
+				border: dashed;		
+				font-family: cursive;
+				align-text: center;
+				width: 500px;
+			}
+			#interactive:hover{
+				background-image: url("giphy.gif");
+
+
+			}
+			#list{
+				background-color:red;
+				width:50%;
+				height:70%;
+				margin: auto;
+				border-radius: 250px;
+				color:white;
+				top:100px;
+				opacity: 0.8;
+			}
+			
+			#ul{
+				position:relative;
+				left:100px;
+			}
+			#ol{
+				position:relative;
+				left:400px;
+			}
+
+			#dl{
+				position: relative;
+				left:40%;
+				top:30px;
+			}
+
+			#forms{
+				background-color: yellow;
+				width:35%;
+				height: 24%;
+				border-radius: 90px;
+				text-align: center;
+				position: relative;
+				margin: auto;
+  				border: 3px solid #73AD21;
+  				position: relative;
+  				top:100px;
+  				opacity: 0.8;
+
+			}
+			#dataList{
+				background-color: cyan;
+				width: 30%;
+				border-radius: 100px;
+				text-align: center;
+				margin: auto;
+  				border: 3px solid #73AD21;
+  				position: relative;
+  				top:200px;
+  				opacity: 0.8;
+			}
+			.css{
+				margin: auto;
+  				border: 3px solid #73AD21;
+  				width:600px;
+  				position: relative;
+  				top:600px;
+  				background-color: lightgreen;
+  				opacity: 0.8;
+
+			}
+			body{
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			background-image: url("istockphoto-184607033-612x612.jpg");
+		}
+		#multimedia{
+			background-color: blue;
+			width:800px;
+			text-align: center;
+			color:white;
+			border-radius: 100px;
+			margin: auto;
+  			border: 3px solid #73AD21;
+  			position: relative;
+  			top:400px;
+  			opacity: 0.9;
+
+		}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<header>
+			<div id="nav">
+				
+				<b>
+				<a href="#list">HTML Lists</a>
+				<a href="#forms">Forms</a>
+				<a href="#dataList">Data Lists</a>
+				<a href="#css">CSS Styling</a>
+				<a href="#interactive">Interactive Div</a>
+				<a href="#multimedia">Multimedia</a>
+				</b>
+			</div>
+			</header>
+			<div id="list">
+				<br>
+				<br>
+				<h1 align="center">HTML Lists</h1>
+				<div id="ol">
+					<h2>Ordered List</h2>
+					<ol>
+						<li>Ordered element 1</li>
+						<li>Ordered element 2</li>
+						<li>Ordered element 3</li>
+					</ol>
+				</div>
+				<div id="ul">
+				<h2>Unordered List</h2>
+				<ul>
+					<li>Unordered element 1</li>
+					<li>Unordered element 2</li>
+					<li>Unordered element 3</li>
+				</ul>
+			</div>
+			<div id="dl">
+				<h2>Description List</h2>
+				<dl>
+					<dt>Data title 1</dt>
+					<dd>-Data description 1</dd>
+					<dt>Data title 2</dt>
+					<dd>-Data description 2</dd>
+				</dl>
+			</div>
+				<br>
+				<br>
+				<h2 align="center">Table</h2>
+				<center>
+				<table border=1 id="mainTable" style="color:white;">
+					<tr>
+						<th rowspan=3>Day</th>
+						<th colspan=3>Seminar</th>
+					</tr>
+					<tr>
+						<th colspan=2>Schedule</th>
+						<th rowspan="2">Topic</th>
+					</tr>
+					<tr>
+						<th>Begin</th>
+						<th>End</th>
+					</tr>
+					<tr>
+					<td rowspan=2>Monday</td>
+					<td rowspan=2>8:00 AM</td>
+					<td rowspan=2>5:00 PM</td>
+					<td>Introduction to html</td>
+				</tr>
+				<tr>
+					<td>Validity DTD and relaxing</td>
+				</tr>
+				<tr>
+					<td rowspan=3>Tuesday</td>
+					<td>8:00 AM</td>
+					<td>11:00 AM</td>
+					<td rowspan=2>X Path</td>
+				</tr>
+				<tr>
+					<td>11:00 AM</td>
+					<td>2:00 PM</td>
+				</tr>
+				<tr>
+					<td>2:00 PM</td>
+					<td>5:00 PM</td>
+					<td>XSL Transformation</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>8:00 AM</td>
+					<td>11:00 AM</td>
+					<td>XSL Formatting object</td>
+				</tr>
+				</table>
+			</center>
+			</div>
+			<div id="forms">
+				<h1>Forms</h1>
+				<form>
+					<table>
+						<tr align="center">
+							<td>
+								<label for="name">Enter your name:</label>
+							</td>
+							<td>
+								<input type="text" id="name">
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<label for="addr">Enter your address:</label>
+							</td>
+							<td>
+								<textarea id="addr" rows="3" cols="30"></textarea>
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<label for="gender">Select your gender</label>
+							</td>
+							<td>
+								<label for="male">Male&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="radio" id="gender" value="Male" name="gender">
+								<br>
+								<label for="female">Female </label>
+								<input type="radio" id="gender" value="Female" name="gender">
+								<br>
+								<label for="other">Other&nbsp;&nbsp;&nbsp;</label>
+								<input type="radio" id="gender" value="Other" name="gender">
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<label for="game">Select game:</label>
+							</td>
+							<td>
+								<label for="hockey">Hockey</label>
+								<input type="checkbox" id="game" name="game" value="Hockey">
+								<br>
+								<label for="cricket">Cricket</label>
+								<input type="checkbox" id="game" name="game" value="cricket">
+								<br>
+								<label for="football">Football</label>
+								<input type="checkbox" id="game" name="game" value="football">
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<label for="class">Select your class</label>
+							</td>
+							<td>
+								<select id="branch" value="Branch List" size=2>
+									<option value="csd">CSD</option>
+									<option value="cs">CS</option>
+									<option value="ec">EC</option>
+									<option value="ei">EI</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=2 align="center">
+								<input type="submit" value="SUBMIT">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="dataList">
+				<h1>Data List</h1>
+				Enter your browser name: 
+				<input type="text" placeholder="Browser name" list="browser">
+				<datalist id="browser">
+					<option value="Safari"></option>
+					<option value="Chrome"></option>
+					<option value="FireFox"></option>
+					<option value="Edge"></option>
+				</datalist>
+			</div>
+			<div id="css">
+				<div class="css">
+				<h1>CSS Styling</h1>
+				<p>
+					<div id="TextStyling" style="font-family: cursive;">
+					<span style="font-family: sans-serif;">CSS </span>(Cascading Style Sheets) styling is a crucial aspect of web development that allows designers and developers to <mark>control the visual presentation of a web page or application</mark>. CSS defines how HTML elements are displayed, including their layout, colors, fonts, spacing, and more.
+				</p>
+			</div>
+			</div>
+			<div id="interactive" style="margin: auto; width: 300px; background-color: lightcoral; text-align: center; position: relative;top: 50PX; opacity: 0.8;">
+				<h1>Interactive DIV</h1>
+				<p>An interactive div (division) element is a fundamental building block in web development, typically used to create a rectangular container within a webpage. While div elements are primarily used for structuring and styling web content, interactivity can be added to them through the use of HTML, CSS, and JavaScript. This interactivity can enhance user experience, engagement, and functionality on a website.
+				</p>
+			</div>
+			<div id="multimedia">
+				<h1>Multimedia</h1>
+				<h2>Video</h2>
+				<video controls width="640" height="360">
+					<source src="Timber _ Short Film about Solidarity by Nils Hedinger.mp4" type="video/mp4">
+				</video>
+				<br>
+				<h2>Audio</h2>
+				<audio controls>
+					<source src="05 Ed Sheeran - Perfect.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+	</body>
+</html>
